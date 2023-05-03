@@ -1,4 +1,4 @@
-package com.dgmf.gettingstartedspfrwk;
+package com.dgmf;
 
 public class Doctor {
     public void assist() {
