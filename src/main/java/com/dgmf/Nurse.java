@@ -1,6 +1,6 @@
 package com.dgmf;
 
-public class Nurse {
+public class Nurse implements Staff {
     public void assist() {
         System.out.println("Nurse is assisting ...");
     }
