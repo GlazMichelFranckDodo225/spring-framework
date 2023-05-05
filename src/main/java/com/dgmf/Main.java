@@ -13,7 +13,8 @@ public class Main {
 				new ClassPathXmlApplicationContext("spring.xml");
 
 		Doctor doctor = context.getBean(Doctor.class);
-		System.out.println(doctor.getQualification());
+		System.out.println(doctor.getQualification()); // MBBS
+		System.out.println(doctor.getNurse()); // com.dgmf.Nurse@71d44a3
 	}
 
 }
