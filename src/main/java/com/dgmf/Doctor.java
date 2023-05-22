@@ -2,7 +2,12 @@ package com.dgmf;
 
 public class Doctor implements Staff {
     private String qualification;
-    private Nurse nurse;
+    // private Nurse nurse;
+
+
+    public Doctor(String qualification) {
+        this.qualification = qualification;
+    }
 
     public String getQualification() {
         return qualification;
@@ -12,15 +17,17 @@ public class Doctor implements Staff {
         this.qualification = qualification;
     }
 
-    public Nurse getNurse() {
+    public void assist() {
+        System.out.println("Doctor is assisting ...");
+    }
+
+    /* public Nurse getNurse() {
         return nurse;
     }
 
     public void setNurse(Nurse nurse) {
         this.nurse = nurse;
-    }
+    } */
 
-    public void assist() {
-        System.out.println("Doctor is assisting ...");
-    }
+
 }
