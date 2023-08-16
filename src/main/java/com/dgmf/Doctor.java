@@ -1,8 +1,11 @@
 package com.dgmf;
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-// @Component
+@Component
+// @Scope(scopeName = "singleton") // Default Scope
+@Scope(scopeName = "prototype") // Default Scope
 public class Doctor implements Staff {
     private String qualification;
 
